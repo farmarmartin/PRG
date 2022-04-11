@@ -1,0 +1,19 @@
+body{
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+}
+
+table{
+    width: 80%;
+    height: 50%;
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tr, th{
+    border: 2px solid white;
+    border-collapse: collapse;
+    
+}
