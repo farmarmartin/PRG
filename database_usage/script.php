@@ -11,20 +11,21 @@ $sql = "SELECT code, from_dttm, from_airport_code, to_dttm, to_airport_code, gat
 $result = mysqli_query($connect, $sql);
 
 echo '<table>';
-echo '<th><h3>let</h3></th>';
-echo '<th><h3>čas odletu</h3></th>';
-echo '<th><h3>z letiště</h3></th>';
-echo '<th><h3>čas příletu</h3></th>';
-echo '<th><h3>na letiště</h3></th>';
-echo '<th><h3>brána</h3></th>';
+echo '<td><h3>let</h3></td>';
+echo '<td><h3>čas odletu</h3></td>';
+echo '<td><h3>z letiště</h3></td>';
+echo '<td><h3>čas příletu</h3></td>';
+echo '<td><h3>na letiště</h3></td>';
+echo '<td><h3>brána</h3></td>';
 
     while($row = mysqli_fetch_assoc($result)){
         echo '<tr>';
-        echo '<th>'.$row['code'].'</th>';
-        echo '<th>'.$row['from_dttm'].'</th>';
-        echo '<th>'.$row['from_airport_code'].'</th>';
-        echo '<th>'.$row['to_dttm'].'</th>';
-        echo '<th>'.$row['to_airport_code'].'</th>';
-        echo '<th>'.$row['gate_code'].'</th>';
+        echo '<td>'.$row['code'].'</td>';
+        echo '<td>'.$row['from_dttm'].'</td>';
+        echo '<td>'.$row['from_airport_code'].'</td>';
+        echo '<td>'.$row['to_dttm'].'</td>';
+        echo '<td>'.$row['to_airport_code'].'</td>';
+        echo '<td>'.$row['gate_code'].'</td>';
         echo '</tr>';
     };
+echo '</table>';
